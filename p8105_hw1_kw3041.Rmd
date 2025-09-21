@@ -4,10 +4,42 @@ output: github_document
 date: "2025-09-21"
 ---
 
-## Below, I will be loading packages and dataset needed for solving the homework 1. 
+## Homework 1 
+
+Below, I will be loading packages and dataset needed for solving the homework 1. 
 
 ```{r}
 library(moderndive)
 data("early_january_weather")
 ```
+
+In order to answer the first question, I am going to take a look at the dataset to assess it. 
+
+```{r}
+head(early_january_weather)
+```
+
+## Problem 1. 
+
+This data includes variables such as `temp`, which is measured in Fahrenheit; `dewp` which is a measure of dewpoint; `humid` for relative humidity; `wind_speed`, and a couple more variables. 
+
+## Checking the structure of "early_january_weather" tibble: 
+
+The early_january_weather dataset contains following number of rows: 
+```{r}
+nrow(early_january_weather)
+```
+
+The early-january_weather dataset contains the following numner of columns:
+```{r}
+ncol(early_january_weather)
+```
+
+The mean temperature of this dataset is:
+```{r}
+mean(early_january_weather[["temp"]], na.rm = TRUE)
+```
+
+
+
 
