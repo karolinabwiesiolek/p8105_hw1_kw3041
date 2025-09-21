@@ -70,8 +70,36 @@ ggplot2::ggsave("scatterplot_weather.png", plot = weather_plot, width = 10, heig
 
 
 
+## Problem 2 
+
+First, I will set a random numeric sample.
 
 
+```{r}
+set.seed(123)
+numeric_vec = rnorm(10)
+```
 
+```{r}
+logical_vec = numeric_vec > 0
+```
 
+```{r}
+char_vec = letters[1:10]
+```
+
+```{r}
+factor_vec = factor(sample(c("Low", "Medium", "High"), size = 10, replace = TRUE ))
+```
+
+```{r}
+df = data.frame(
+  numeric_var = numeric_vec,
+  logical_var = logical_vec,
+  char_var = char_vec,
+  factor_var = factor_vec
+)
+
+df
+```
 
