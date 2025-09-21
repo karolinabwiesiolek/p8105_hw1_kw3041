@@ -112,3 +112,12 @@ mean(df[ , "numeric_var"])
 mean(df[ , "logical_var"])
 ```
 
+```{r}
+mean(df[ , "char_var"])
+mean(df[ , "factor_var"])
+```
+
+The question in the Problem 2. was to assess whether mean can be taken from various variables -- the answer is that it can't. 
+
+Only numeric and logical variables can be averaged directly, if we wanted to get the average, mean of factors and characters we would first need to convert or assign them a numeric conversion. 
+
