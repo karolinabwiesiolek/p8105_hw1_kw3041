@@ -103,3 +103,12 @@ df = data.frame(
 df
 ```
 
+
+# Numeric and Logical Mean
+Now, I will be taking mean from each variable: 
+
+```{r}
+mean(df[ , "numeric_var"])
+mean(df[ , "logical_var"])
+```
+
